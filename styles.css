@@ -169,10 +169,10 @@ body {
 /* Button Styles */
 .profile-buttons {
     display: flex;
-    flex-direction: column; /* Makes buttons stack vertically */
+    flex-direction: column; 
     gap: 8px;
     margin-top: auto;
-    width: 100%; /* Ensures buttons take full width of container */
+    width: 100%;  
 }
 
 /* Add these styles for profile button types */
@@ -185,7 +185,7 @@ body {
     font-size: 14px;
     color: white;
     transition: background-color 0.3s ease;
-    width: 100%; /* Makes buttons fill container width */
+    width: 100%;
 }
 
 .logout-button {
