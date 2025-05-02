@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin List</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="main-container">
+        <div class="admin-list-container">
+            <h1>Admin List</h1>
+            <div class="admin-search">
+                <input type="text" placeholder="Search admin..." class="search-input" />
+                <button class="search-button">Search</button>
+            </div>
+            <div class="admin-content">
+                <div class="admin-item">
+                    <img src="teacher.png" alt="Admin" class="admin-image" />
+                    <div class="admin-text">
+                        <h2>John Doe</h2>
+                        <p><span class="admin-id">ID: ADM001</span> • Super Admin</p>
+                    </div>
+                    <div class="admin-buttons">
+                        <button class="edit-button">Edit</button>
+                        <button class="delete-button">Delete</button>
+                    </div>
+                </div>
+
+                <div class="admin-item">
+                    <img src="teacher.png" alt="Admin" class="admin-image" />
+                    <div class="admin-text">
+                        <h2>Jane Smith</h2>
+                        <p><span class="admin-id">ID: ADM002</span> • System Admin</p>
+                    </div>
+                    <div class="admin-buttons">
+                        <button class="edit-button">Edit</button>
+                        <button class="delete-button">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <button class="back-button" onclick="window.location.href='index.html'">Back to Dashboard</button>
+        </div>
+    </div>
+</body>
+</html>

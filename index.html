@@ -11,14 +11,18 @@
         <div class="profile-container">
             <img src="teacher.png" alt="Profile Picture" class="profile-picture" />
             <h1>Juan Tamad</h1>
-            <div class="category">
-                <h2>Category: Teachers</h2>
-                <p>Manage the list of teachers in the system.</p>
+            <div class="category" data-tooltip="View and manage all courses, including schedules and curricula">
+                <h2>Courses</h2>
+            </div>
+            <div class="category" data-tooltip="Access instructor profiles, assignments, and teaching loads">
+                <h2>Instructors</h2>
+            </div>
+            <div class="category" data-tooltip="Monitor student enrollment, grades, and academic progress">
+                <h2>Students</h2>
             </div>
             <div class="profile-buttons">
-                <button class="logout-button">Logout</button>
-                <button class="admin-button">Admin List</button>
-                <button class="help-button">Help</button>
+                <button class="admin-button" onclick="window.location.href='admin_list.html'">Admin List</button>
+                <button class="logout-button" onclick="window.location.href='logout.html'">Logout</button>
             </div>
         </div>
         

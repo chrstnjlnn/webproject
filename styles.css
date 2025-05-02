@@ -32,6 +32,9 @@ body {
     height: 70%;
     text-align: center;
     position: relative;
+    display: flex;          
+    flex-direction: column; 
+    justify-content: space-between; 
 }
 
 .list-container {
@@ -166,9 +169,41 @@ body {
 /* Button Styles */
 .profile-buttons {
     display: flex;
+    flex-direction: column; /* Makes buttons stack vertically */
     gap: 8px;
-    margin-top: 10px;
+    margin-top: auto;
+    width: 100%; /* Ensures buttons take full width of container */
 }
+
+/* Add these styles for profile button types */
+.logout-button,
+.admin-button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    color: white;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Makes buttons fill container width */
+}
+
+.logout-button {
+    background-color: #ff6d6f;
+}
+
+.admin-button {
+    background-color: #4ba0fa;
+}
+
+.logout-button:hover {
+    background-color: #ff3f3c;
+}
+
+.admin-button:hover {
+    background-color: #357ac8;
+}
+
 
 .list-buttons {
     display: flex;
@@ -202,4 +237,277 @@ body {
 
 .delete-button:hover {
     background-color: #ff7875;
+}
+
+.category {
+    position: relative;
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 2px 4px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.category::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    background-color: #333;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    width: max-content;
+    max-width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 100%;
+    margin-bottom: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease 1s, visibility 0.3s ease;
+    z-index: 1000;
+}
+
+.category::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 100%;
+    border: 6px solid transparent;
+    border-top-color: #333;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease 1s, visibility 0.3s ease;
+}
+
+.category:hover::before,
+.category:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Logout Styles */
+
+.logout-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 100px auto;
+}
+
+.logout-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.logout-container h1 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.logout-container p {
+    color: #666;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.logout-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.cancel-button,
+.confirm-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.cancel-button {
+    background-color: #f5f5f5;
+    color: #666;
+}
+
+.confirm-button {
+    background-color: #ff4d4f;
+    color: white;
+}
+
+.cancel-button:hover {
+    background-color: #e8e8e8;
+}
+
+.confirm-button:hover {
+    background-color: #ff7875;
+}
+
+/* Landing Page Styles */
+.landing-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 100px auto;
+}
+
+.landing-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 2px solid #8acbd0;
+}
+
+.landing-container h1 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.landing-container p {
+    color: #666;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.login-input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.login-input:focus {
+    border-color: #8acbd0;
+    outline: none;
+}
+
+.login-button {
+    padding: 12px;
+    background-color: #4ba0fa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #357ac8;
+}
+
+/* Admin List Styles */
+.admin-list-container {
+    background-color: #8acbd0;
+    padding: 30px;
+    border-radius: 20px;
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.admin-search {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.admin-content {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.admin-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    gap: 15px;
+}
+
+.admin-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.admin-text {
+    flex: 1;
+}
+
+.admin-text h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.admin-text p {
+    margin: 5px 0 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.admin-id {
+    font-family: monospace;
+    background-color: #f0f0f0;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+.admin-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.back-button {
+    padding: 10px 20px;
+    background-color: #4ba0fa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    align-self: flex-start;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #357ac8;
 }
