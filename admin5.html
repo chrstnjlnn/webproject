@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin Page 5</title>
+    <link rel="stylesheet" href="admin5.css" />
+</head>
+<body>
+    <div class="main-container">
+        <div class="profile-container">
+            <img src="teacher.png" alt="Profile Picture" class="profile-picture" />
+            <h1>Juan Tamad</h1>
+            <div class="category" onclick="window.location.href='courses.html'" data-tooltip="View and manage all courses, including schedules and curricula">
+                <h2>Courses</h2>
+            </div>
+            <div class="category" data-tooltip="Access instructor profiles, assignments, and teaching loads">
+                <h2>Instructors</h2>
+            </div>
+            <div class="category" data-tooltip="Monitor student enrollment, grades, and academic progress">
+                <h2>Students</h2>
+            </div>
+            <div class="profile-buttons">
+                <button class="admin-button" onclick="window.location.href='admin_list.html'">Admin List</button>
+                <button class="logout-button" onclick="window.location.href='logout.html'">Logout</button>
+            </div>
+        </div>
+        
+        <div class="list-container">
+            <div class="list-search">
+                <h3>Search</h3>
+                <input type="text" placeholder="Search..." class="search-input" />
+                <button class="search-button">Search</button>
+            </div>
+            
+            <div class="list-content">
+                <div class="list-item" data-uid="20230001">
+                    <img src="teacher.png" alt="List Item" class="list-image" />
+                    <div class="list-text">
+                        <h2>Maria Santos</h2>
+                        <h3>09123456789</h3>
+                        <p><span class="uid">UID: 20230001</span> • Mathematics Department Head, 10 years of teaching experience</p>
+                        <div class="list-buttons">
+                            <button class="edit-button">Edit</button>
+                            <button class="delete-button">Delete</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-item" data-uid="20230002">
+                    <img src="teacher.png" alt="List Item" class="list-image" />
+                    <div class="list-text">
+                        <h2>John Cruz</h2>
+                        <h3>09187654321</h3>
+                        <p><span class="uid">UID: 20230002</span> • Science Teacher, specializes in Physics and Chemistry</p>
+                        <div class="list-buttons">
+                            <button class="edit-button">Edit</button>
+                            <button class="delete-button">Delete</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-item" data-uid="20230003">
+                    <img src="teacher.png" alt="List Item" class="list-image" />
+                    <div class="list-text">
+                        <h2>Ana Reyes</h2>
+                        <h3>09234567890</h3>
+                        <p><span class="uid">UID: 20230003</span> • English Literature Professor, Published Author</p>
+                        <div class="list-buttons">
+                            <button class="edit-button">Edit</button>
+                            <button class="delete-button">Delete</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-item" data-uid="20230004">
+                    <img src="teacher.png" alt="List Item" class="list-image" />
+                    <div class="list-text">
+                        <h2>Miguel Garcia</h2>
+                        <h3>09345678901</h3>
+                        <p><span class="uid">UID: 20230004</span> • Physical Education Coordinator, Former National Athlete</p>
+                        <div class="list-buttons">
+                            <button class="edit-button">Edit</button>
+                            <button class="delete-button">Delete</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-item" data-uid="20230005">
+                    <img src="teacher.png" alt="List Item" class="list-image" />
+                    <div class="list-text">
+                        <h2>Isabella Lopez</h2>
+                        <h3>09456789012</h3>
+                        <p><span class="uid">UID: 20230005</span> • Art and Music Teacher, Orchestra Conductor</p>
+                        <div class="list-buttons">
+                            <button class="edit-button">Edit</button>
+                            <button class="delete-button">Delete</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-item" data-uid="20230006">
+                    <img src="teacher.png" alt="List Item" class="list-image" />
+                    <div class="list-text">
+                        <h2>Ramon Torres</h2>
+                        <h3>09567890123</h3>
+                        <p><span class="uid">UID: 20230006</span> • Computer Science Instructor, Software Developer</p>
+                        <div class="list-buttons">
+                            <button class="edit-button">Edit</button>
+                            <button class="delete-button">Delete</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-item" data-uid="20230007">
+                    <img src="teacher.png" alt="List Item" class="list-image" />
+                    <div class="list-text">
+                        <h2>Sofia Mendoza</h2>
+                        <h3>09678901234</h3>
+                        <p><span class="uid">UID: 20230007</span> • History Teacher, Archaeological Researcher</p>
+                        <div class="list-buttons">
+                            <button class="edit-button">Edit</button>
+                            <button class="delete-button">Delete</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-item" data-uid="20230008">
+                    <img src="teacher.png" alt="List Item" class="list-image" />
+                    <div class="list-text">
+                        <h2>Carlos Bautista</h2>
+                        <h3>09789012345</h3>
+                        <p><span class="uid">UID: 20230008</span> • Chemistry Lab Coordinator, Research Scientist</p>
+                        <div class="list-buttons">
+                            <button class="edit-button">Edit</button>
+                            <button class="delete-button">Delete</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-item" data-uid="20230009">
+                    <img src="teacher.png" alt="List Item" class="list-image" />
+                    <div class="list-text">
+                        <h2>Luna Pascual</h2>
+                        <h3>09890123456</h3>
+                        <p><span class="uid">UID: 20230009</span> • Philosophy Professor, Published Author</p>
+                        <div class="list-buttons">
+                            <button class="edit-button">Edit</button>
+                            <button class="delete-button">Delete</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-item" data-uid="20230010">
+                    <img src="teacher.png" alt="List Item" class="list-image" />
+                    <div class="list-text">
+                        <h2>Diego Ramos</h2>
+                        <h3>09901234567</h3>
+                        <p><span class="uid">UID: 20230010</span> • Social Studies Department Head, Policy Analyst</p>
+                        <div class="list-buttons">
+                            <button class="edit-button">Edit</button>
+                            <button class="delete-button">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

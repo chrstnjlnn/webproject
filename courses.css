@@ -1,4 +1,3 @@
-/* Global Styles */
 body {
     background-color: #383d53;
     display: flex;
@@ -12,7 +11,7 @@ body {
 .main-container {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 170vh;
     height: 100%;
 }
 
@@ -20,12 +19,12 @@ body {
     background-color: #8acbd0;
     padding: 30px;
     border-radius: 20px;
-    width: 80%; /* Changed from 130% to better fit the screen */
+    width: 80%; 
     height: 80vh;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin: auto; /* Adds auto margins for centering */
+    margin: auto; 
 }
 
 .courses-search {
@@ -101,7 +100,6 @@ body {
     background-color: #357ac8;
 }
 
-/* Search Section */
 .list-search {
     display: flex;
     flex-direction: row;
