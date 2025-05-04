@@ -283,7 +283,6 @@ body {
 }
 
 .category {
-    // ...existing code...
     transition: transform 0.1s ease, background-color 0.3s ease;
 }
 
